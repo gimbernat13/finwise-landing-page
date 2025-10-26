@@ -36,7 +36,7 @@ export interface ITestimonial {
 
 export interface IStats {
     title: string;
-    icon: JSX.Element;
+    icon?: JSX.Element;
     description: string;
 }
 
