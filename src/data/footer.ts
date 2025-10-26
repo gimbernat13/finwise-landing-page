@@ -7,18 +7,18 @@ export const footerDetails: {
     telephone: string;
     socials: ISocials;
 } = {
-    subheading: "Empowering businesses with cutting-edge financial technology solutions.",
+    subheading: "La mejor plataforma de streaming con miles de películas, series y canales en vivo.",
     quickLinks: [
         {
-            text: "Features",
+            text: "Características",
             url: "#features"
         },
         {
-            text: "Pricing",
+            text: "Precios",
             url: "#pricing"
         },
         {
-            text: "Testimonials",
+            text: "Testimonios",
             url: "#testimonials"
         }
     ],

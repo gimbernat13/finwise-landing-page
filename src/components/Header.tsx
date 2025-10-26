@@ -7,7 +7,6 @@ import { Transition } from '@headlessui/react';
 import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
 
 import Container from './Container';
-import { siteDetails } from '@/data/siteDetails';
 import { menuItems } from '@/data/menuItems';
 
 const Header: React.FC = () => {
@@ -24,7 +23,7 @@ const Header: React.FC = () => {
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2">
                         <Image
-                            src="/kaelus/kaleus-logo.webp"
+                            src="/kaelus/kaelus-logo.png"
                             alt="Kaelus TV"
                             width={180}
                             height={60}

@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
                 <div>
                     <Link href="/" className="flex items-center gap-3">
                         <Image
-                            src="/kaelus/kaleus-logo.webp"
+                            src="/kaelus/kaelus-logo.png"
                             alt="Kaelus TV"
                             width={100}
                             height={40}
