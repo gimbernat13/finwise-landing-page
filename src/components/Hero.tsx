@@ -10,34 +10,72 @@ const Hero: React.FC = () => {
     return (
         <section
             id="hero"
-            className="relative flex items-center justify-center pb-0 pt-32 md:pt-40 px-5"
+            className="relative flex items-center justify-center pb-0 pt-32 md:pt-40 px-5 min-h-screen"
         >
-            <div className="absolute left-0 top-0 bottom-0 -z-10 w-full">
-                <div className="absolute inset-0 h-full w-full bg-hero-background bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]">
-                </div>
-            </div>
-
-            <div className="absolute left-0 right-0 bottom-0 backdrop-blur-[2px] h-40 bg-gradient-to-b from-transparent via-[rgba(233,238,255,0.5)] to-[rgba(202,208,230,0.5)]">
-            </div>
-
-            <div className="text-center">
-                <h1 className="text-4xl md:text-6xl md:leading-tight font-bold text-foreground max-w-lg md:max-w-2xl mx-auto">{heroDetails.heading}</h1>
-                <p className="mt-4 text-foreground max-w-lg mx-auto">{heroDetails.subheading}</p>
-                <div className="mt-6 flex flex-col sm:flex-row items-center sm:gap-4 w-fit mx-auto">
-                    <AppStoreButton dark />
-                    <PlayStoreButton dark />
-                </div>
+            <div className="absolute left-0 top-0 bottom-0 -z-10 w-full h-full">
                 <Image
-                    src={heroDetails.centerImageSrc}
-                    width={384}
-                    height={340}
-                    quality={100}
-                    sizes="(max-width: 768px) 100vw, 384px"
-                    priority={true}
-                    unoptimized={true}
-                    alt="app mockup"
-                    className='relative mt-12 md:mt-16 mx-auto z-10'
+                    src="/images/hero-bg.webp"
+                    alt="Hero background"
+                    fill
+                    className="object-cover opacity-60"
+                    priority
                 />
+                <div className="absolute inset-0 bg-black/40"></div>
+            </div>
+
+            <div className="absolute left-0 right-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-background z-10">
+            </div>
+
+            <div className="text-center relative z-20">
+                {/* Flash Badge */}
+                <div className="inline-block mb-4 animate-pulse">
+                    <span className="bg-gradient-to-r from-primary to-secondary text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
+                        🔥 OFERTA ESPECIAL - 3 DISPOSITIVOS
+                    </span>
+                </div>
+
+                <h1 className="text-5xl md:text-7xl md:leading-tight font-black text-foreground max-w-lg md:max-w-4xl mx-auto drop-shadow-2xl">
+                    {heroDetails.heading}
+                </h1>
+
+                <p className="mt-6 text-2xl md:text-3xl font-semibold text-foreground max-w-2xl mx-auto drop-shadow-lg">
+                    {heroDetails.subheading}
+                </p>
+
+                {/* Value Props */}
+                <div className="mt-8 flex flex-wrap justify-center gap-4 md:gap-8 max-w-3xl mx-auto">
+                    <div className="flex items-center gap-2 text-foreground">
+                        <span className="text-2xl">✓</span>
+                        <span className="text-lg font-semibold">28,000 Películas</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-foreground">
+                        <span className="text-2xl">✓</span>
+                        <span className="text-lg font-semibold">6,000 Series</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-foreground">
+                        <span className="text-2xl">✓</span>
+                        <span className="text-lg font-semibold">2,000 Canales</span>
+                    </div>
+                </div>
+
+                <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 w-fit mx-auto">
+                    <button className="relative bg-gradient-to-r from-primary to-primary-accent text-white px-10 py-5 rounded-full font-black text-xl hover:scale-105 transition-transform shadow-2xl [animation:bounce_1s_ease-in-out_1] hover:animate-none group">
+                        <span className="relative z-10">CONTRATAR AHORA</span>
+                        <div className="absolute inset-0 rounded-full bg-white opacity-0 group-hover:opacity-20 transition-opacity"></div>
+                    </button>
+                    <div className="text-foreground-accent text-sm">
+                        <p className="font-semibold">💳 Sin compromisos</p>
+                        <p>Cancela cuando quieras</p>
+                    </div>
+                </div>
+
+                {/* Trust Badge */}
+                <div className="mt-8 text-foreground-accent text-sm">
+                    <p className="flex items-center justify-center gap-2">
+                        <span className="text-yellow-400 text-xl">⭐⭐⭐⭐⭐</span>
+                        <span className="font-semibold">Miles de clientes satisfechos</span>
+                    </p>
+                </div>
             </div>
         </section>
     );

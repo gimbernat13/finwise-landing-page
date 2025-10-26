@@ -1,5 +1,5 @@
 export const heroDetails = {
-    heading: 'Smart, Secure, Simple Financial Management',
-    subheading: 'From effortless budgeting to real-time investment insights, Finwise puts you in control of your money like never before',
+    heading: 'La mejor App de Streaming y TV en Vivo',
+    subheading: 'Contrata $250 MXN mensuales 3 Dispositivos',
     centerImageSrc: '/images/hero-mockup.webp',
 }
