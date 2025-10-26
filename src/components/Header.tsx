@@ -1,10 +1,10 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
-import { FaFingerprint } from 'react-icons/fa';
 
 import Container from './Container';
 import { siteDetails } from '@/data/siteDetails';
@@ -23,9 +23,13 @@ const Header: React.FC = () => {
                 <nav className="shadow-md md:shadow-none bg-background md:bg-black/50 md:backdrop-blur-md mx-auto flex justify-between items-center py-2 px-5 md:py-6">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2">
-                        <span className="manrope text-2xl font-bold text-foreground cursor-pointer">
-                            {siteDetails.siteName}
-                        </span>
+                        <Image
+                            src="/kaelus/kaleus-logo.webp"
+                            alt="Kaelus TV"
+                            width={180}
+                            height={60}
+                            className="h-12 md:h-14 w-auto"
+                        />
                     </Link>
 
                     {/* Desktop Menu */}

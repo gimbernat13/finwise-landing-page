@@ -1,6 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import React from 'react';
-import { FaFingerprint } from 'react-icons/fa';
+import { FaWhatsapp, FaPhone } from 'react-icons/fa';
 
 import { siteDetails } from '@/data/siteDetails';
 import { footerDetails } from '@/data/footer';
@@ -11,11 +12,14 @@ const Footer: React.FC = () => {
         <footer className="bg-hero-background text-foreground py-10">
             <div className="max-w-7xl w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
                 <div>
-                    <Link href="/" className="flex items-center gap-2">
-                        <FaFingerprint className="min-w-fit w-5 h-5 md:w-7 md:h-7" />
-                        <h3 className="manrope text-xl font-semibold cursor-pointer">
-                            {siteDetails.siteName}
-                        </h3>
+                    <Link href="/" className="flex items-center gap-3">
+                        <Image
+                            src="/kaelus/kaleus-logo.webp"
+                            alt="Kaelus TV"
+                            width={100}
+                            height={40}
+                            className="h-10 w-auto"
+                        />
                     </Link>
                     <p className="mt-3.5 text-foreground-accent">
                         {footerDetails.subheading}
@@ -32,11 +36,25 @@ const Footer: React.FC = () => {
                     </ul>
                 </div>
                 <div>
-                    <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
+                    <h4 className="text-lg font-semibold mb-4">Contacto</h4>
 
-                    {footerDetails.email && <a href={`mailto:${footerDetails.email}`}  className="block text-foreground-accent hover:text-foreground">Email: {footerDetails.email}</a>}
+                    <a
+                        href="https://wa.me/522212141679?text=Hola,%20quiero%20más%20información%20sobre%20Kaelus%20TV"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-foreground-accent hover:text-primary mb-3 transition-colors"
+                    >
+                        <FaWhatsapp size={20} />
+                        <span>+52 221 214 1679</span>
+                    </a>
 
-                    {footerDetails.telephone && <a href={`tel:${footerDetails.telephone}`} className="block text-foreground-accent hover:text-foreground">Phone: {footerDetails.telephone}</a>}
+                    <a
+                        href="tel:+522212141679"
+                        className="flex items-center gap-2 text-foreground-accent hover:text-primary transition-colors"
+                    >
+                        <FaPhone size={18} />
+                        <span>+52 221 214 1679</span>
+                    </a>
 
                     {footerDetails.socials && (
                         <div className="mt-5 flex items-center gap-5 flex-wrap">

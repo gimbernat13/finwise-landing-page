@@ -34,12 +34,17 @@ const Hero: React.FC = () => {
                     </span>
                 </div>
 
-                <h1 className="text-5xl md:text-7xl md:leading-tight font-black text-foreground max-w-lg md:max-w-4xl mx-auto drop-shadow-2xl">
-                    {heroDetails.heading}
+                <h1 className="text-5xl md:text-7xl md:leading-tight font-black max-w-lg md:max-w-4xl mx-auto drop-shadow-2xl">
+                    <span className="text-foreground">La mejor App de </span>
+                    <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Streaming</span>
+                    <span className="text-foreground"> y </span>
+                    <span className="bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent">TV en Vivo</span>
                 </h1>
 
-                <p className="mt-6 text-2xl md:text-3xl font-semibold text-foreground max-w-2xl mx-auto drop-shadow-lg">
-                    {heroDetails.subheading}
+                <p className="mt-6 text-2xl md:text-3xl font-semibold max-w-2xl mx-auto drop-shadow-lg">
+                    <span className="text-foreground-accent">Contrata </span>
+                    <span className="text-primary font-bold">$250 MXN mensuales</span>
+                    <span className="text-foreground-accent"> 3 Dispositivos</span>
                 </p>
 
                 {/* Value Props */}
