@@ -12,16 +12,14 @@ interface Movie {
 }
 
 const movies: Movie[] = [
-    { id: 1, title: 'Estrenos', image: '/kaelus/estrenos.jpg', badge: 'Nuevo' },
-    { id: 2, title: 'Merlina', image: '/kaelus/merlina.jpeg', badge: 'Nuevo' },
-    { id: 3, title: 'Mascotas al Rescate', image: '/kaelus/mascotasalrescate.jpg', badge: 'Nuevo' },
-    { id: 4, title: 'Teléfono Negro 2', image: '/kaelus/telefono-negro-2.jpeg', badge: 'Nuevo' },
-    { id: 5, title: 'Good Boy', image: '/kaelus/good-boy.jpg', badge: 'Nuevo' },
-    { id: 6, title: 'Gen V', image: '/kaelus/gen-v.jpeg' },
-    { id: 7, title: 'Monster: Ed Gein', image: '/kaelus/Monster-Ed-Gein-2.webp' },
-    { id: 8, title: 'Bad', image: '/kaelus/bad.jpg' },
-    { id: 9, title: 'UFC Fight Night', image: '/kaelus/connor-mcgreggor.png' },
-    { id: 10, title: 'Roses', image: '/kaelus/roses.jpg' },
+    { id: 1, title: 'Teléfono Negro', image: '/kaelus/01cfbaf0-telefono-negro-2.-cortesia-universl-pictures.jpg', badge: 'Nuevo' },
+    { id: 2, title: 'Monster: Ed Gein', image: '/kaelus/Monster-Ed-Gein-2.webp', badge: 'Nuevo' },
+    { id: 3, title: 'Bad', image: '/kaelus/bad.jpg' },
+    { id: 6, title: 'Roses', image: '/kaelus/roses.jpg' },
+    // { id: 7, title: 'Featured', image: '/kaelus/maxresdefault.jpg' },
+    { id: 8, title: 'New Release', image: '/kaelus/6f3be03f-b755-41c5-9a04-1a18cee8a242.jpeg' },
+    { id: 9, title: 'Action', image: '/kaelus/d2407e43649b8beb608a0048dc344e8f95388a1e96e1ea4fb1209478fadf9f4c.png' },
+    { id: 10, title: 'Latest', image: '/kaelus/484827474_1163661348882596_2184960687926068531_n.jpg' },
 ];
 
 const MovieCarousel: React.FC = () => {
@@ -91,9 +89,9 @@ const MovieCarousel: React.FC = () => {
     };
 
     return (
-        <section className="py-16 px-5 bg-background">
+        <section className="py-16 pb-24 md:pb-32 px-5 bg-background">
             <div className="max-w-7xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">Las mejores Series y Películas</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">Estrenos</h2>
 
                 <div
                     className="relative group"

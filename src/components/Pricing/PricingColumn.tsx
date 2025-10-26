@@ -21,9 +21,14 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
                     </span>
                     {typeof price === 'number' && <span className="text-sm font-normal text-foreground-accent"> x 3 Dispositivos</span>}
                 </p>
-                <button className={clsx("w-full py-3 px-4 rounded-full transition-colors font-semibold", { "bg-primary hover:bg-primary-accent text-white": highlight, "bg-transparent border border-border-color hover:border-primary text-foreground": !highlight })}>
+                <a
+                    href={`https://wa.me/522212141679?text=Hola,%20quiero%20contratar%20el%20plan%20${name}%20de%20Kaelus%20TV`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={clsx("w-full py-3 px-4 rounded-full transition-colors font-semibold block text-center", { "bg-primary hover:bg-primary-accent text-white": highlight, "bg-transparent border border-border-color hover:border-primary text-foreground": !highlight })}
+                >
                     Contratar Ahora
-                </button>
+                </a>
             </div>
             <div className="p-6 mt-1">
                 <ul className="space-y-3 mb-8">

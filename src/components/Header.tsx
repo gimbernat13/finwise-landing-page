@@ -38,9 +38,9 @@ const Header: React.FC = () => {
                             </li>
                         ))}
                         <li>
-                            <Link href="#pricing" className="text-white bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors font-semibold">
+                            <a href="https://wa.me/522212141679?text=Hola,%20quiero%20contratar%20Kaelus%20TV" target="_blank" rel="noopener noreferrer" className="text-white bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors font-semibold">
                                 Contratar
-                            </Link>
+                            </a>
                         </li>
                     </ul>
 
@@ -84,9 +84,9 @@ const Header: React.FC = () => {
                             </li>
                         ))}
                         <li>
-                            <Link href="#pricing" className="text-white bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit font-semibold" onClick={toggleMenu}>
+                            <a href="https://wa.me/522212141679?text=Hola,%20quiero%20contratar%20Kaelus%20TV" target="_blank" rel="noopener noreferrer" className="text-white bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit font-semibold">
                                 Contratar
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                 </div>

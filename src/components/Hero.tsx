@@ -59,10 +59,15 @@ const Hero: React.FC = () => {
                 </div>
 
                 <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 w-fit mx-auto">
-                    <button className="relative bg-gradient-to-r from-primary to-primary-accent text-white px-10 py-5 rounded-full font-black text-xl hover:scale-105 transition-transform shadow-2xl [animation:bounce_1s_ease-in-out_1] hover:animate-none group">
+                    <a
+                        href="https://wa.me/522212141679?text=Hola,%20quiero%20contratar%20Kaelus%20TV"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="relative bg-gradient-to-r from-primary to-primary-accent text-white px-10 py-5 rounded-full font-black text-xl hover:scale-105 transition-transform shadow-2xl [animation:bounce_1s_ease-in-out_1] hover:animate-none group"
+                    >
                         <span className="relative z-10">CONTRATAR AHORA</span>
                         <div className="absolute inset-0 rounded-full bg-white opacity-0 group-hover:opacity-20 transition-opacity"></div>
-                    </button>
+                    </a>
                     <div className="text-foreground-accent text-sm">
                         <p className="font-semibold">💳 Sin compromisos</p>
                         <p>Cancela cuando quieras</p>

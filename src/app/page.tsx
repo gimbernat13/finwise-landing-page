@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
       <Container>
         <Section
           id="stats"
-          title="Todo el contenido que necesitas"
+          title="Todo el contenido que necesitas<br />en una sola App"
           description="Miles de películas, series y canales en vivo disponibles 24/7"
         >
           <Stats />
