@@ -5,8 +5,8 @@ import { childVariants } from "./BenefitSection"
 
 const BenefitBullet: React.FC<IBenefitBullet> = ({ title, description, icon }: IBenefitBullet) => {
     // Check if description contains sport leagues (indicated by bullet points •)
-    const hasSportBadges = description.includes('•');
-    const sportsList = hasSportBadges ? description.split('•').map(s => s.trim()).filter(s => s) : [];
+    // const hasSportBadges = description.includes('•');
+    // const sportsList = hasSportBadges ? description.split('•').map(s => s.trim()).filter(s => s) : [];
 
     return (
         <motion.div
@@ -20,7 +20,7 @@ const BenefitBullet: React.FC<IBenefitBullet> = ({ title, description, icon }: I
                 <h4 className="text-lg font-semibold">
                     {title}
                 </h4>
-                {hasSportBadges ? (
+                {/* {hasSportBadges ? (
                     <div className="flex flex-wrap gap-2 mt-3">
                         {sportsList.map((sport, index) => (
                             <span
@@ -31,11 +31,11 @@ const BenefitBullet: React.FC<IBenefitBullet> = ({ title, description, icon }: I
                             </span>
                         ))}
                     </div>
-                ) : (
+                ) : ( */}
                     <p className="text-base text-foreground-accent">
                         {description}
                     </p>
-                )}
+                {/* )} */}
             </div>
         </motion.div>
     )
